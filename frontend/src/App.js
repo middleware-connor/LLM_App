@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import { BubbleChat } from "flowise-embed-react";
 
 function App() {
+  const CHAT_FLOW_ID = ''
+  const API_HOST = ''
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <BubbleChat chatflowid={CHAT_FLOW_ID} apiHost={API_HOST} />
       </header>
     </div>
   );
